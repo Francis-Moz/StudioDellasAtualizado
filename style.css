@@ -52,10 +52,9 @@ body{
 }
 #conteudoHeader__img{
     margin-right: 10px;
-    background-color: green;
 }
 #conteudoHeader__img img{
-    width: 39vw;
+    width: 37vw;
 }
 #conteudoHeader__txt h1{
     font-family: yellowtail;
