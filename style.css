@@ -1,0 +1,583 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILO DO BODY E HEADER */ 
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    background-image: linear-gradient( to bottom, #fee6f3 7%, #ffffff 50%, #fee6f3)
+}
+#containerConteudoBody{
+    width: 100%;
+    max-width: 1280px;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+#header{
+    width: 100%;
+    max-width: 1280px;
+    height: 120vh;
+    background-color: #fee6f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#header__logo{
+    width: 150px;
+    position: absolute;
+    top: 0px;
+}
+#conteudoHeader{
+    width: 87%;
+    height: 45%;
+    top: 20%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#conteudoHeader__txt{
+    width: 45%;
+    height: 100%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#conteudoHeader__img{
+    margin-right: 10px;
+}
+#conteudoHeader__txt h1{
+    font-family: yellowtail;
+    font-weight: 500;
+    font-size: 4em;
+    color: #471e59;
+}
+#conteudoHeader__txt p{
+    font-family: inter;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+#conteudoHeader__imgOnda{
+    position: absolute;
+    bottom: 0;    
+}
+
+/* ESTILO NOSSA ESPECIALIDADE */
+
+.Secao__titulo{
+    text-align: center;
+    font-size: 2em;
+    font-family: inria serif;
+    color: #3cd1d3;
+    text-shadow: 2px 2px 2px #c2c2c2;
+    position: absolute;
+    top:5%;
+}
+#secaoNossaEspecialidade{
+    max-width: 1280px;
+    min-height:768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#secaoNossaEspecialidade__Container{
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.especialidades{
+    width: 170px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.especialidades__img{
+    width: 170px;
+}
+.especialidades__titulo{
+    font-size: 1em;
+    font-family: inria serif;
+    text-align: center;
+    color: #471e59;
+}
+.especialidades__txt{
+    font-size: 0.9em;
+    font-family: inria serif;
+    text-align: center;
+}
+
+/* ESTILO QUEM SOMOS */
+
+#secaoQuemSomos{
+    max-width: 1280px;
+    min-height: 768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#secaoQuemSomos__Container{
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#secaoQuemSomos__img{
+    width: 360px;
+}
+#secaoQuemSomos__txt{
+    width: 515px;
+    position: relative;
+    font-family:Istok Web;
+    font-size: 1em;
+    font-weight: 500;
+}
+#secaoQuemSomos__txt p{
+    position: relative;
+    z-index: 2;
+}
+#secaoQuemSomos__imgtxt{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+/* ESTILO IMAGEM FUNDO*/
+
+#secaoImagemFundo{
+    width: 100%;
+    height: 350px;
+    background-image:url(Assets/esmaltepincel.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* ESTILO O QUE MAIS FAZEMOS */
+
+#secaoOQueMaisFazemos{
+    width: 100%;
+    min-height: 600px;
+    background-image: linear-gradient(to bottom, #ffffff , #fee6f3);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#secaoOQueMaisFazemos h3{
+    top: 5%;
+}
+#secaoOQueMaisFazemos__container{
+    max-width: 1200px;
+    width: 87%;
+    display: flex;
+    justify-content:space-between;
+}
+.secaoOQueMaisFazemos__servicos{
+    width: 160px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.servicos__titulo{
+    margin-top: 7px;
+    font-size: 1em;
+    font-family: inria serif;
+    text-align: center;
+}
+.servicos__img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px #f5c518;
+}
+
+/* ESTILO CONTATOS*/
+
+#secaoContatos{
+    width: 100%;
+    height: 100vh;
+    background-color: #fee6f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.Secao__titulo__contatos{
+    text-align: center;
+    font-size: 2em;
+    font-family: inria serif;
+    color: #3cd1d3;
+    text-shadow: 2px 2px 2px #c2c2c2;
+    top:10%;
+}
+#secaoContatosLocalizacao__container{
+    width: 87%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulosSecoes__contatos{
+    font-family:sans-serif ;
+    font-size: 1rem;
+}
+.contatos1{
+    width: 30%;
+    height: 65%;
+    /*background-color: yellowgreen;*/
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+}
+.anuncioWhatsInsta{
+    display: flex;
+    align-items: center;
+}
+.anuncioWhatsInsta img{
+    width: 25px;
+    margin-right: 20px;
+}
+.anuncioWhatsInsta p{
+    font-family: sans-serif;
+    font-size: 0.9rem;
+}
+.contatoProfissional__namenumber{
+    display: flex;
+    justify-content: space-between;
+}
+.nomeProfissional{
+    font-family: sans-serif;
+    font-weight: 550;
+}
+.numeroProfissional{
+    text-decoration: none;
+    color: black;
+    font-weight: 560;
+}
+.especialidadeProfissional{
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+.contatos2{
+    width: 30%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    /*background-color: yellow;*/
+}
+.linksInstagram{
+    position: relative;
+    top: 15%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.linksInstagram a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 560;
+    color: black;
+
+}
+.contatos2__txt{
+    position: relative;
+    top: 25%;
+    max-width: 350px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+.contatos3{
+    /*background-color: green;*/
+    max-width: 300px;
+    height: 65%;
+}
+.imgContatos3{
+    width: 100%;
+}
+#desenvolvedor{
+    width: 90%;
+    padding-top: 15px;
+    border-top-style:solid ;
+    border-color: #6c2d88;
+    font-family: Inter;
+    font-size: 0.8em;
+    text-align: center;
+}
+#desenvolvedor a{
+    text-decoration: none;
+    color: black;
+}
+/*CONFIGURAÇÕES DE RESPONSIVIDADE*/
+
+@media screen and (max-width: 993px) {
+    /* ESTILO DO BODY E HEADER SCREEN TABLET */ 
+
+    #header__logo{
+        width: 120px;
+    }
+    #conteudoHeader__img img{
+        width: 400px;
+    }
+    #conteudoHeader__txt h1{
+        font-size: 3.2em;
+    }
+    #conteudoHeader__txt p{
+        font-size: 0.7em;
+        font-weight: 300;
+    }
+    /* ESTILO NOSSA ESPECIALIDADE SCREEN TABLET */
+
+    .Secao__titulo{
+        font-size: 1.6em;
+    }
+    .especialidades{
+        width: 150px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .especialidades__img{
+        width: 150px;
+    }
+    /* ESTILO QUEM SOMOS SCREEN TABLET */
+
+    #secaoQuemSomos__img{
+        width: 300px;
+    }
+    #secaoQuemSomos__txt{
+        width: 350px;
+        font-size: 0.9em;
+    }
+    #secaoQuemSomos__imgtxt{
+        width: 250px;
+    }
+    /*ESTILO O QUE MAIS FAZEMOS SCREEN TABLET */
+
+    #secaoOQueMaisFazemos__container{
+        max-width: 996px;
+        display: grid;
+        gap: 18px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        overflow-x: auto;
+    }
+    /*.secaoOQueMaisFazemos__servicos{
+        width: 150px;
+        height: 275px;
+    }*/
+    .servicos__titulo{
+        font-size: 0.9em;
+    }
+    /*.servicos__img{
+        width: 150px;
+        height: 242px;
+        border-bottom-left-radius: 15px;
+    }*/    
+    /* ESTILO CONTATOS SCREEN TABLET */
+    #secaoContatos{
+        width: 100%;
+        height: 90vh;
+    }
+    #secaoContatosLocalizacao__container{
+        width: 87%;
+        height: 80%;
+    }
+    .tituloContatoLocal{
+        font-size: 1em;
+    }
+
+}
+@media screen and (max-width: 767px) {
+      /* ESTILO DO BODY E HEADER SCREEN CELULAR*/ 
+      #header{
+        height: 100vh;
+      }  
+      #conteudoHeader{
+        width: 85%;
+        height: 65vh;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+    }
+    #header__logo{
+        width: 90px;
+    }
+    #conteudoHeader__img{
+        align-self:flex-end;
+    }
+    #conteudoHeader__img img{
+        width: 400px;
+    }
+    #conteudoHeader__txt{
+        width: 60%;
+        height: 40%;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #conteudoHeader__txt h1{
+        font-family: yellowtail;
+        font-size: 3.2em;
+        color: #471e59;
+    }
+    #conteudoHeader__txt p{
+        font-family: inter;
+        font-size: 0.7em;
+        font-weight: 300;
+    }
+    #conteudoHeader__imgOnda{
+        width: 100%;    
+    }
+    /*ESTILO QUEM SOMOS SCREEN CELULAR*/
+    #secaoQuemSomos__Container{
+        width: 87%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #secaoQuemSomos__img{
+        width: 280px;
+    }
+    #secaoQuemSomos__txt{
+        width: 280px;
+        position: relative;
+        font-family:Istok Web;
+        font-size: 1em;
+        font-weight: 500;
+    }
+}
+@media screen and (max-width: 600px) {
+       /* ESTILO DO BODY E HEADER SCREEN CELULAR MENOR*/ 
+
+      #conteudoHeader{
+        width: 85%;
+        height: 60vh;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    #header__logo{
+        width: 80px;
+    }
+    #conteudoHeader__img img{
+        width: 300px;
+    }
+    #conteudoHeader__txt{
+        width: 70%;
+    }
+    #conteudoHeader__txt h1{
+        font-size: 2.6em;
+    }
+    /* ESTILO NOSSA ESPECIALIDADE SCREEN CELULAR MENOR */
+
+    #secaoNossaEspecialidade{
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        position: relative;
+    }
+    #secaoNossaEspecialidade__Container{
+        width: 87%;
+        height: 94%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .Secao__titulo{
+        top:3%;
+    }
+    .especialidades{
+        width: 150px;
+        height: 260px;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /* ESTILO QUEM SOMOS SCREEN CELULAR MENOR */
+
+    #secaoQuemSomos{
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        position: relative;
+    }
+    #secaoQuemSomos__Container{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #secaoQuemSomos__img{
+        width: 280px;
+    }
+    #secaoQuemSomos__txt{
+        width: 280px;
+        position: relative;
+        font-family:Istok Web;
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    /* ESTILO O QUE MAIS FAZEMOS CELULAR MENOR */
+    .secaoOQueMaisFazemos__servicos--down{
+        align-self: auto;
+    }
+
+    /* ESTILO CONTATO CELULAR MENOR */
+    #secaoContatos{
+        width: 100%;
+        height: 125vh;
+    }
+    #secaoContatosLocalizacao__container{
+        width: 95%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+   .contatos1{
+    width: 95%;
+    height: 60%;
+   }
+   .backgroundColor {
+    justify-content: space-around;
+    height: 100%;
+   }
+   .contatos2{
+    width: 95%;
+    height: 500px;
+   }
+   .containerLocalizacao{
+    display: flex;
+    flex-direction: column;
+   }
+   iframe{
+    align-self: center;
+   }
+}
