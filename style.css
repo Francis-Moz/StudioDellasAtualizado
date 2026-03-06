@@ -52,6 +52,10 @@ body{
 }
 #conteudoHeader__img{
     margin-right: 10px;
+    background-color: green;
+}
+#conteudoHeader__img img{
+    width: 39vw;
 }
 #conteudoHeader__txt h1{
     font-family: yellowtail;
@@ -66,6 +70,7 @@ body{
 }
 #conteudoHeader__imgOnda{
     position: absolute;
+    width: 100%;
     bottom: 0;    
 }
 
@@ -329,23 +334,20 @@ body{
 }
 /*CONFIGURAÇÕES DE RESPONSIVIDADE*/
 
-@media screen and (max-width: 993px) {
-    /* ESTILO DO BODY E HEADER SCREEN TABLET */ 
+@media screen and (max-width: 992px) {
+    /* ESTILO DO BODY E HEADER desktop padrão */ 
 
-    #header__logo{
-        width: 120px;
-    }
-    #conteudoHeader__img img{
-        width: 400px;
-    }
+    /*#conteudoHeader__img img{
+        width: 500px;
+    }*/
     #conteudoHeader__txt h1{
-        font-size: 3.2em;
+        font-size: 3.5em;
     }
     #conteudoHeader__txt p{
-        font-size: 0.7em;
+        font-size: 0.9em;
         font-weight: 300;
     }
-    /* ESTILO NOSSA ESPECIALIDADE SCREEN TABLET */
+    /* ESTILO NOSSA ESPECIALIDADE desktop padrão */
 
     .Secao__titulo{
         font-size: 1.6em;
@@ -360,7 +362,7 @@ body{
     .especialidades__img{
         width: 150px;
     }
-    /* ESTILO QUEM SOMOS SCREEN TABLET */
+    /* ESTILO QUEM SOMOS desktop padrão */
 
     #secaoQuemSomos__img{
         width: 300px;
@@ -372,10 +374,10 @@ body{
     #secaoQuemSomos__imgtxt{
         width: 250px;
     }
-    /*ESTILO O QUE MAIS FAZEMOS SCREEN TABLET */
+    /*ESTILO O QUE MAIS FAZEMOS desktop padrão */
 
     #secaoOQueMaisFazemos__container{
-        max-width: 996px;
+        max-width: 1280px;
         display: grid;
         gap: 18px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
