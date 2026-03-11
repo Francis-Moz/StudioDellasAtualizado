@@ -577,14 +577,14 @@ body{
     /* ESTILO CONTATO CELULAR MENOR */
     #secaoContatos{
         width: 100%;
-        height: 180vh;
+        height: 175vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
     #secaoContatosLocalizacao__container{
         width: 95%;
-        height: 160vh;
+        height: 152vh;
         display: flex;
         flex-direction: column;
         align-items: center;
