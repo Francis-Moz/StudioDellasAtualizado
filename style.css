@@ -53,9 +53,9 @@ body{
 #conteudoHeader__img{
     margin-right: 10px;
 }
-#conteudoHeader__img img{
-    width: 37vw;
-}
+/*#conteudoHeader__img img{
+    width: 31vw;
+}*/
 #conteudoHeader__txt h1{
     font-family: yellowtail;
     font-weight: 500;
@@ -394,7 +394,6 @@ body{
         height: 242px;
         border-bottom-left-radius: 15px;
     }*/    
-    /* ESTILO CONTATOS SCREEN TABLET */
     #secaoContatos{
         width: 100%;
         height: 90vh;
@@ -408,8 +407,8 @@ body{
     }
 
 }
-@media screen and (max-width: 767px) {
-      /* ESTILO DO BODY E HEADER SCREEN CELULAR*/ 
+@media screen and (max-width: 768px) {
+      /* ESTILO DO BODY E HEADER SCREEN TABLET*/ 
       #header{
         height: 100vh;
       }  
@@ -451,21 +450,48 @@ body{
         width: 100%;    
     }
     /*ESTILO QUEM SOMOS SCREEN CELULAR*/
-    #secaoQuemSomos__Container{
+    /*#secaoQuemSomos__Container{
         width: 87%;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+    }*/
     #secaoQuemSomos__img{
-        width: 280px;
+        width: 320px;
     }
     #secaoQuemSomos__txt{
-        width: 280px;
+        width: 300px;
         position: relative;
         font-family:Istok Web;
         font-size: 1em;
         font-weight: 500;
+    }
+    #secaoContatos{
+        background-color: white;
+        height: 100vh;
+    }
+    #secaoContatosLocalizacao__container{
+        height: 80vh;
+        background-color: #3cd1d3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: start;
+    }
+    .contatos1{
+        background-color: red;
+        width: 42vw;
+        height: 35vh;
+    }
+    .contatos2{
+        background-color: green;
+        width: 42vw;
+        height: 35vh;
+    }
+    .contatos3{
+        background-color: antiquewhite;
+        width: 42vw;
+        height: 35vh;
     }
 }
 @media screen and (max-width: 600px) {
