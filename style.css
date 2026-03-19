@@ -86,7 +86,7 @@ body{
 }
 #secaoNossaEspecialidade{
     max-width: 1280px;
-    min-height:768px;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,7 +125,7 @@ body{
 
 #secaoQuemSomos{
     max-width: 1280px;
-    min-height: 768px;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -244,7 +244,6 @@ body{
 .contatos1{
     width: 27%;
     height: 65%;
-    /*background-color: yellowgreen;*/
     display: flex;
     flex-direction: column;
     justify-content:space-between ;
@@ -283,7 +282,6 @@ body{
     height: 65%;
     display: flex;
     flex-direction: column;
-    /*background-color: yellow;*/
 }
 .linksInstagram{
     position: relative;
@@ -381,18 +379,9 @@ body{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         overflow-x: auto;
     }
-    /*.secaoOQueMaisFazemos__servicos{
-        width: 150px;
-        height: 275px;
-    }*/
     .servicos__titulo{
         font-size: 0.9em;
     }
-    /*.servicos__img{
-        width: 150px;
-        height: 242px;
-        border-bottom-left-radius: 15px;
-    }*/    
     #secaoContatos{
         width: 100%;
         height: 90vh;
@@ -404,9 +393,8 @@ body{
     .tituloContatoLocal{
         font-size: 1em;
     }
-
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
       /* ESTILO DO BODY E HEADER SCREEN TABLET*/ 
       #header{
         height: 100vh;
@@ -448,7 +436,14 @@ body{
     #conteudoHeader__imgOnda{
         width: 100%;    
     }
-    /*ESTILO QUEM SOMOS SCREEN CELULAR*/
+    /*ESTILO NOSSA ESPECIALIDADE SCREEN TABLET*/
+    .Secao__titulo{
+    top:1%;
+}
+    #secaoNossaEspecialidade{
+        height: 60vh;
+    }
+    /*ESTILO QUEM SOMOS SCREEN TABLET*/
     #secaoQuemSomos{
         height: 95vh;
     }
@@ -493,8 +488,8 @@ body{
         height: 35vh;
     }
 }
-@media screen and (max-width: 600px) {
-       /* ESTILO DO BODY E HEADER SCREEN CELULAR MENOR*/ 
+@media screen and (max-width: 605px) {
+       /* ESTILO DO BODY E HEADER SCREEN CELULAR */ 
       #header{
         height: 105vh;
       }  
@@ -504,7 +499,7 @@ body{
         top: 15%;
         display: flex;
         flex-direction: column;
-        align-content: space-around;
+        align-content: center;
     }
     #header__logo{
         width: 80px;
@@ -518,7 +513,7 @@ body{
     #conteudoHeader__txt h1{
         font-size: 2.6em;
     }
-    /* ESTILO NOSSA ESPECIALIDADE SCREEN CELULAR MENOR */
+    /* ESTILO NOSSA ESPECIALIDADE SCREEN */
 
     #secaoNossaEspecialidade{
         height: 1300px;
@@ -547,7 +542,7 @@ body{
         flex-direction: column;
         justify-content: space-between;
     }
-    /* ESTILO QUEM SOMOS SCREEN CELULAR MENOR */
+    /* ESTILO QUEM SOMOS SCREEN CELULAR */
 
     #secaoQuemSomos{
         height: 1000px;
@@ -574,8 +569,9 @@ body{
         font-size: 1em;
         font-weight: 500;
     }
-    /* ESTILO CONTATO CELULAR MENOR */
+    /* ESTILO CONTATO CELULAR */
     #secaoContatos{
+        /*background-color: green;*/
         width: 100%;
         height: 175vh;
         display: flex;
@@ -583,21 +579,26 @@ body{
         justify-content: space-around;
     }
     #secaoContatosLocalizacao__container{
+        /*background-color: yellow;*/
         width: 95%;
-        height: 152vh;
+        height: 120vh;
+        position: relative;
+        top: -75px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-evenly;
     }
    .contatos1{
+    /*background-color: grey;*/
     width: 95%;
-    height: 400px;
+    height: 360px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
    }
    .contatos2{
+    /*background-color: red;*/
     width: 95%;
     height: 250px;
     display: flex;
@@ -607,6 +608,7 @@ body{
     height: 60px;
    }
    .contatos3{
+    /*background-color: greenyellow;*/
     width: 95%;
    }
    .containerLocalizacao{
